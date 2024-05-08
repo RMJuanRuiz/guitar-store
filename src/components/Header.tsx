@@ -1,4 +1,4 @@
-import { GuitarI } from '../models/guitar';
+import { CartItem } from '../models/cart';
 
 export default function Header({
   cart,
@@ -8,7 +8,7 @@ export default function Header({
   isCartEmpty,
   cartTotal,
 }: {
-  cart: GuitarI[];
+  cart: CartItem[];
   removeFromCart: (id: number) => void;
   changeQuantity: (id: number, action: 'increase' | 'decrease') => void;
   clearCart: () => void;

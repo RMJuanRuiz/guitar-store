@@ -8,7 +8,6 @@ export const db: GuitarI[] = [
     description:
       'Morbi ornare augue nisl, vel elementum dui mollis vel. Curabitur non ex id eros fermentum hendrerit.',
     price: 299,
-    quantity: 1,
   },
   {
     id: 2,
@@ -17,7 +16,6 @@ export const db: GuitarI[] = [
     description:
       'Morbi ornare augue nisl, vel elementum dui mollis vel. Curabitur non ex id eros fermentum hendrerit.',
     price: 349,
-    quantity: 1,
   },
   {
     id: 3,
@@ -26,7 +24,6 @@ export const db: GuitarI[] = [
     description:
       'Morbi ornare augue nisl, vel elementum dui mollis vel. Curabitur non ex id eros fermentum hendrerit.',
     price: 329,
-    quantity: 1,
   },
   {
     id: 4,
@@ -35,7 +32,6 @@ export const db: GuitarI[] = [
     description:
       'Morbi ornare augue nisl, vel elementum dui mollis vel. Curabitur non ex id eros fermentum hendrerit.',
     price: 299,
-    quantity: 1,
   },
   {
     id: 5,
@@ -44,7 +40,6 @@ export const db: GuitarI[] = [
     description:
       'Morbi ornare augue nisl, vel elementum dui mollis vel. Curabitur non ex id eros fermentum hendrerit.',
     price: 399,
-    quantity: 1,
   },
   {
     id: 6,
@@ -53,7 +48,6 @@ export const db: GuitarI[] = [
     description:
       'Morbi ornare augue nisl, vel elementum dui mollis vel. Curabitur non ex id eros fermentum hendrerit.',
     price: 329,
-    quantity: 1,
   },
   {
     id: 7,
@@ -62,7 +56,6 @@ export const db: GuitarI[] = [
     description:
       'Morbi ornare augue nisl, vel elementum dui mollis vel. Curabitur non ex id eros fermentum hendrerit.',
     price: 349,
-    quantity: 1,
   },
   {
     id: 8,
@@ -71,7 +64,6 @@ export const db: GuitarI[] = [
     description:
       'Morbi ornare augue nisl, vel elementum dui mollis vel. Curabitur non ex id eros fermentum hendrerit.',
     price: 379,
-    quantity: 1,
   },
   {
     id: 9,
@@ -80,7 +72,6 @@ export const db: GuitarI[] = [
     description:
       'Morbi ornare augue nisl, vel elementum dui mollis vel. Curabitur non ex id eros fermentum hendrerit.',
     price: 289,
-    quantity: 1,
   },
   {
     id: 10,
@@ -89,7 +80,6 @@ export const db: GuitarI[] = [
     description:
       'Morbi ornare augue nisl, vel elementum dui mollis vel. Curabitur non ex id eros fermentum hendrerit.',
     price: 349,
-    quantity: 1,
   },
   {
     id: 11,
@@ -98,7 +88,6 @@ export const db: GuitarI[] = [
     description:
       'Morbi ornare augue nisl, vel elementum dui mollis vel. Curabitur non ex id eros fermentum hendrerit.',
     price: 399,
-    quantity: 1,
   },
   {
     id: 12,
@@ -107,6 +96,5 @@ export const db: GuitarI[] = [
     description:
       'Morbi ornare augue nisl, vel elementum dui mollis vel. Curabitur non ex id eros fermentum hendrerit.',
     price: 379,
-    quantity: 1,
   },
 ];

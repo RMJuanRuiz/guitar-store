@@ -2,12 +2,13 @@ import { useEffect, useMemo, useState } from 'react';
 
 import { db } from '../data/db.ts';
 import { GuitarI } from '../models/guitar.ts';
+import { CartItem } from '../models/cart.ts';
 
 const MIN_QUANTITY = 1;
 const MAX_QUANTITY = 5;
 
 const useCart = () => {
-  const initialCart = (): GuitarI[] => {
+  const initialCart = (): CartItem[] => {
     const localStorageCart = localStorage.getItem('cart');
 
     return localStorageCart ? JSON.parse(localStorageCart) : [];
@@ -33,8 +34,8 @@ const useCart = () => {
 
       setCart(updatedCart);
     } else {
-      guitar.quantity = 1;
-      setCart([...cart, guitar]);
+      const cartItem = { ...guitar, quantity: 1 };
+      setCart([...cart, cartItem]);
     }
   }
 
