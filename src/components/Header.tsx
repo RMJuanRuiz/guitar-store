@@ -1,36 +1,27 @@
 import { GuitarI } from '../models/guitar';
-import { useMemo } from 'react';
 
 export default function Header({
   cart,
   removeFromCart,
   changeQuantity,
   clearCart,
+  isCartEmpty,
+  cartTotal,
 }: {
   cart: GuitarI[];
   removeFromCart: (id: number) => void;
   changeQuantity: (id: number, action: 'increase' | 'decrease') => void;
   clearCart: () => void;
+  isCartEmpty: boolean;
+  cartTotal: number;
 }) {
-  const isCartEmpty = useMemo(() => cart.length === 0, [cart]);
-  const cartTotal = useMemo(
-    () =>
-      cart.reduce(
-        (total, guitar) => total + (guitar.quantity || 1) * guitar.price,
-        0
-      ),
-    [cart]
-  );
-
   return (
     <>
       <header className="py-5 header">
         <div className="container-xl">
           <div className="row justify-content-center justify-content-md-between">
             <div className="col-8 col-md-3">
-              <a href="index.html">
-                <h1>GUITAR STORE</h1>
-              </a>
+              <h1>GUITAR STORE</h1>
             </div>
             <nav className="col-md-6 a mt-5 d-flex align-items-start justify-content-end">
               <div className="cart">
