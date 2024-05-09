@@ -1,11 +1,13 @@
+import { Dispatch } from 'react';
 import { GuitarI } from '../models/guitar';
+import { CartActions } from '../reducers/cart-reducer';
 
 export default function Guitar({
   data,
-  addToCart,
+  dispatch,
 }: {
   data: GuitarI;
-  addToCart: (data: GuitarI) => void;
+  dispatch: Dispatch<CartActions>;
 }) {
   const { name, description, image, price } = data;
 
@@ -21,7 +23,9 @@ export default function Guitar({
         <button
           type="button"
           className="btn btn-dark w-100"
-          onClick={() => addToCart(data)}
+          onClick={() =>
+            dispatch({ type: 'add-to-cart', payload: { item: data } })
+          }
         >
           Add to cart
         </button>
